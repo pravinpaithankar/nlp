@@ -53,3 +53,38 @@ named_entities = fit_ner(texts)
 print("Organization Named Entities:", named_entities['ORG'])
 print("Person Named Entities:", named_entities['PER'])
 print("Geopolitical Entity Named Entities:", named_entities['GPE'])
+
+
+
+# PRACTICAL 1 : NER
+
+# Aim:
+
+# The aim of this assignment is to explore the use of Named Entity
+# Recognition (NER) as an information extraction technique in natural
+# language processing. It focuses on identifying and classifying key
+# entities in text data to enhance data analysis and understanding.
+
+
+
+# Objectives:
+
+# 1. To define Named Entity Recognition and its significance in natural
+# language processing.
+
+# 2. To evaluate various NER algorithms and models available for entity
+# extraction.
+
+# 3. To implement a practical NER application using a suitable
+# programming language and library.
+
+
+
+# Theory:
+
+# Named Entity Recognition (NER) is a crucial technique in information
+# extraction that identifies and classifies named entities in
+# unstructured text into predefined categories, such as persons,
+# organizations, locations, dates, and more. By leveraging NER,
+# researchers and practitioners can extract meaningful insights from
+# large datasets, enabling more efficient data processing and analysis.
