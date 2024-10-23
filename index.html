@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Experiments - Advanced Version</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 20px;
+            background-color: #1e1e1e;
+            color: #d1dbe3;
+        }
+
+        h1 {
+            color: #d4d4d4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #3c3c3c;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333842;
+            color: #dcdcdc;
+        }
+
+        td {
+            background-color: #252526;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #007acc;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: #005f9c;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            color: #dcdcaa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            box-shadow: 0px 0px 5px #000;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Syntax highlighting for the code editor */
+        .keyword {
+            color: #569cd6;
+        }
+
+        .function {
+            color: #dcdcaa;
+        }
+
+        .string {
+            color: #ce9178;
+        }
+
+        .comment {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        .number {
+            color: #b5cea8;
+        }
+
+        /* Dark mode styling */
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: #d1dbe3;
+        }
+
+        button.dark-mode-toggle {
+            margin-top: 20px;
+            background-color: #a8cc56;
+            color: #1e1e1e;
+        }
+
+        button.dark-mode-toggle:hover {
+            background-color: #8ab743;
+        }
+    </style>
+</head>
+<body>
+    <h1>NLP Practical Experiments</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Experiment No</th>
+                <th>Title</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Use of Named Entity Recognition information Extraction Technique</td>
+                <td>
+                    <button onclick="copyExperiment(1)">Copy Experiment</button>
+                    <button onclick="downloadCode(1)">Download</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Stop Words Removal</td>
+                <td>
+                    <button onclick="copyExperiment(2)">Copy Experiment</button>
+                    <button onclick="downloadCode(2)">Download</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Stemming</td>
+                <td>
+                    <button onclick="copyExperiment(3)">Copy Experiment</button>
+                    <button onclick="downloadCode(3)">Download</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lemmatization</td>
+                <td>
+                    <button onclick="copyExperiment(4)">Copy Experiment</button>
+                    <button onclick="downloadCode(4)">Download</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>POS Tagging</td>
+                <td>
+                    <button onclick="copyExperiment(5)">Copy Experiment</button>
+                    <button onclick="downloadCode(5)">Download</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Named Entity Recognition (NER)</td>
+                <td>
+                    <button onclick="copyExperiment(6)">Copy Experiment</button>
+                    <button onclick="downloadCode(6)">Download</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const experiments = {
+            1: `Experiment 1: Text Tokenization\nAim: To tokenize a given text into individual words or sentences.\nObjective: To understand how tokenization helps in breaking down text for further NLP processes.`,
+            2: `Experiment 2: Stop Words Removal\nAim: To remove stop words from a given text.\nObjective: To clean the text by removing commonly used words that don't add much meaning.`,
+            3: `Experiment 3: Stemming\nAim: To reduce words to their base or root form.\nObjective: To perform stemming for reducing inflectional forms of words.`,
+            4: `Experiment 4: Lemmatization\nAim: To reduce words to their base or dictionary form using lemmatization.\nObjective: To perform lemmatization for better linguistic analysis.`,
+            5: `Experiment 5: POS Tagging\nAim: To assign part-of-speech tags to words in a sentence.\nObjective: To identify the grammatical categories of words.`,
+            6: `Experiment 6: Named Entity Recognition (NER)\nAim: To identify named entities such as persons, locations, and organizations.\nObjective: To extract important entities from a text.`
+        };
+
+        function copyExperiment(experimentNo) {
+            const text = experiments[experimentNo];
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Experiment copied to clipboard!');
+            });
+        }
+
+        function downloadFile(filename, content) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadCode(experimentNo) {
+    const filename = `experiments/${experimentNo}.py`;
+    const link = document.createElement('a');
+    link.href = filename;
+    link.download = `${experimentNo}.py`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+    </script>
+</body>
+</html>
