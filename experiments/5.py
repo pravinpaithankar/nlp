@@ -151,3 +151,39 @@ pprint(lda_model.print_topics())
 for i, topic_distribution in enumerate(lda_model[corpus]):
     print(f"\nDocument {i + 1} Topic Distribution:")
     print(topic_distribution)
+
+
+# PRACTICAL 5 : ASPECT MINING AND TOPIC MODELING
+
+# Aim
+
+# The aim of this project is to implement aspect mining and topic
+# modeling techniques for extracting meaningful insights from textual
+# data. By identifying key aspects and underlying topics, we can better
+# understand the sentiments and themes present in the text.
+
+
+
+# Objectives
+
+# 1. To utilize Natural Language Processing (NLP) techniques for
+# extracting aspects from text data.
+
+# 2. To implement topic modeling using algorithms like LDA to discover
+# latent topics in the dataset.
+
+# 3. To evaluate the effectiveness of the aspect mining and topic
+# modeling techniques through qualitative analysis of results.
+
+
+
+# Theory
+
+# Aspect mining focuses on identifying specific features or components
+# within a given text that are of interest, such as product attributes or
+# sentiment-related topics. Topic modeling is a statistical method that
+# analyzes text to uncover hidden thematic structures, helping to group
+# similar content and facilitate better information retrieval and
+# understanding.
+
+
