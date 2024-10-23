@@ -66,3 +66,43 @@ summary = ' '.join(final_summary)
 print("Original Text Length:", len(doc1.split()))
 print("Summary Length:", len(summary.split()))
 print("\nSummary:\n", summary)
+
+
+
+# PRACTICAL 3 : TEXT SUMMARIZATION
+
+# Aim:
+
+# The aim of this assignment is to explore and implement Natural
+# Language Processing (NLP) techniques for text summarization. This
+# process will enable the extraction of key information from larger
+# texts, facilitating easier comprehension and efficient information
+# retrieval.
+
+
+
+# Objectives:
+
+# 1. To understand different approaches to text summarization,
+# including extractive and abstractive methods.
+
+# 2. To investigate various NLP libraries and tools used for text
+# summarization tasks.
+
+# 3. To develop and evaluate a text summarization model using a
+# sample dataset, assessing its effectiveness in retaining essential
+# information.
+
+
+
+# Theory:
+
+# Text summarization is a Natural Language Processing (NLP) task that
+# aims to condense a lengthy text into a shorter version while
+# preserving its essential information. It can be categorized into
+# extractive summarization, which selects key sentences from the text,
+# and abstractive summarization, which generates new sentences to
+# convey the main ideas. By employing various NLP techniques,
+# summarization aids in quickly grasping the content and relevance of
+# documents in an increasingly information-rich environment.
+
