@@ -46,3 +46,39 @@ sp = spm.SentencePieceProcessor(model_file='m.model')
 # Tokenize using custom SentencePiece model
 sentencepiece_tokens = sp.encode_as_pieces(text)
 print(sentencepiece_tokens)
+
+
+
+# PRACTICAL 6 : ADVANCED TOKENIZATION TECHNIQUES
+
+# Aim
+
+# The aim of this project is to explore and implement advanced
+# tokenization techniques using Python for Natural Language
+# Processing (NLP). By applying various tokenization methods, we seek
+# to enhance the accuracy of text analysis and improve the
+# performance of NLP models.
+
+
+
+# Objectives
+
+# 1. To implement and compare basic word tokenization and advanced
+# methods like subword and byte pair encoding.
+
+# 2. To evaluate the effectiveness of different tokenization techniques
+# on diverse text samples.
+
+# 3. To demonstrate the practical applications of tokenization in tasks
+# such as sentiment analysis and text summarization.
+
+
+
+# Theory
+
+# Tokenization is a crucial step in NLP that involves splitting text into
+# smaller units, such as words or subwords, for analysis. Advanced
+# tokenization techniques, like subword tokenization, improve model
+# performance by addressing the limitations of traditional methods,
+# such as handling out-of-vocabulary words and improving
+# representation for morphological variations.
